@@ -1,0 +1,31 @@
+[package]
+name = "autoendpoint-rs"
+version = "0.1.0"
+authors = ["jrconlin <me+crypt@jrconlin.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web ="1.0"
+base64 = "0.10"
+bytes = "0.4"
+cadence = "0.18"
+config = "0.9"
+env_logger = {version="0.6", default-features = false}
+failure = "0.1"
+rand="0.7"
+regex="1.2"
+rusoto_core = "0.40"
+rusoto_credential = "0.40"
+rusoto_dynamodb = "0.40"
+serde = "1.0"
+serde_derive = "1.0"
+slog = {version="2.5", features = ["max_level_trace", "release_max_level_info"]}
+slog-async = "2.3"
+slog-term = "2.4"
+slog-mozlog-json = "0.1"
+slog-scope = "4.1"
+slog-stdlog = "4.0"
+time = "0.1"
+uuid = {version="0.7", features=["serde", "v4"]}
